@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F320154623DCA4D600801101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320154523DCA4D600801101 /* AppDelegate.swift */; };
+		F320154823DCA4D600801101 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320154723DCA4D600801101 /* SceneDelegate.swift */; };
+		F320154A23DCA4D600801101 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320154923DCA4D600801101 /* ViewController.swift */; };
+		F320154D23DCA4D600801101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F320154B23DCA4D600801101 /* Main.storyboard */; };
+		F320155023DCA4D600801101 /* Infogate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F320154E23DCA4D600801101 /* Infogate.xcdatamodeld */; };
+		F320155223DCA4D800801101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F320155123DCA4D800801101 /* Assets.xcassets */; };
+		F320155523DCA4D800801101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F320155323DCA4D800801101 /* LaunchScreen.storyboard */; };
+		F320156023DCA4D800801101 /* InfogateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320155F23DCA4D800801101 /* InfogateTests.swift */; };
+		F320156B23DCA4D900801101 /* InfogateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320156A23DCA4D900801101 /* InfogateUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F320155C23DCA4D800801101 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F320153A23DCA4D600801101 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F320154123DCA4D600801101;
+			remoteInfo = Infogate;
+		};
+		F320156723DCA4D900801101 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F320153A23DCA4D600801101 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F320154123DCA4D600801101;
+			remoteInfo = Infogate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F320154223DCA4D600801101 /* Infogate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infogate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F320154523DCA4D600801101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F320154723DCA4D600801101 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F320154923DCA4D600801101 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F320154C23DCA4D600801101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F320154F23DCA4D600801101 /* Infogate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Infogate.xcdatamodel; sourceTree = "<group>"; };
+		F320155123DCA4D800801101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F320155423DCA4D800801101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F320155623DCA4D800801101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F320155B23DCA4D800801101 /* InfogateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfogateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F320155F23DCA4D800801101 /* InfogateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfogateTests.swift; sourceTree = "<group>"; };
+		F320156123DCA4D800801101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F320156623DCA4D900801101 /* InfogateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfogateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F320156A23DCA4D900801101 /* InfogateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfogateUITests.swift; sourceTree = "<group>"; };
+		F320156C23DCA4D900801101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F320153F23DCA4D600801101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F320155823DCA4D800801101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F320156323DCA4D900801101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F320153923DCA4D600801101 = {
+			isa = PBXGroup;
+			children = (
+				F320154423DCA4D600801101 /* Infogate */,
+				F320155E23DCA4D800801101 /* InfogateTests */,
+				F320156923DCA4D900801101 /* InfogateUITests */,
+				F320154323DCA4D600801101 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F320154323DCA4D600801101 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F320154223DCA4D600801101 /* Infogate.app */,
+				F320155B23DCA4D800801101 /* InfogateTests.xctest */,
+				F320156623DCA4D900801101 /* InfogateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F320154423DCA4D600801101 /* Infogate */ = {
+			isa = PBXGroup;
+			children = (
+				F320154523DCA4D600801101 /* AppDelegate.swift */,
+				F320154723DCA4D600801101 /* SceneDelegate.swift */,
+				F320154923DCA4D600801101 /* ViewController.swift */,
+				F320154B23DCA4D600801101 /* Main.storyboard */,
+				F320155123DCA4D800801101 /* Assets.xcassets */,
+				F320155323DCA4D800801101 /* LaunchScreen.storyboard */,
+				F320155623DCA4D800801101 /* Info.plist */,
+				F320154E23DCA4D600801101 /* Infogate.xcdatamodeld */,
+			);
+			path = Infogate;
+			sourceTree = "<group>";
+		};
+		F320155E23DCA4D800801101 /* InfogateTests */ = {
+			isa = PBXGroup;
+			children = (
+				F320155F23DCA4D800801101 /* InfogateTests.swift */,
+				F320156123DCA4D800801101 /* Info.plist */,
+			);
+			path = InfogateTests;
+			sourceTree = "<group>";
+		};
+		F320156923DCA4D900801101 /* InfogateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F320156A23DCA4D900801101 /* InfogateUITests.swift */,
+				F320156C23DCA4D900801101 /* Info.plist */,
+			);
+			path = InfogateUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F320154123DCA4D600801101 /* Infogate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F320156F23DCA4D900801101 /* Build configuration list for PBXNativeTarget "Infogate" */;
+			buildPhases = (
+				F320153E23DCA4D600801101 /* Sources */,
+				F320153F23DCA4D600801101 /* Frameworks */,
+				F320154023DCA4D600801101 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Infogate;
+			productName = Infogate;
+			productReference = F320154223DCA4D600801101 /* Infogate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F320155A23DCA4D800801101 /* InfogateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F320157223DCA4D900801101 /* Build configuration list for PBXNativeTarget "InfogateTests" */;
+			buildPhases = (
+				F320155723DCA4D800801101 /* Sources */,
+				F320155823DCA4D800801101 /* Frameworks */,
+				F320155923DCA4D800801101 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F320155D23DCA4D800801101 /* PBXTargetDependency */,
+			);
+			name = InfogateTests;
+			productName = InfogateTests;
+			productReference = F320155B23DCA4D800801101 /* InfogateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F320156523DCA4D900801101 /* InfogateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F320157523DCA4D900801101 /* Build configuration list for PBXNativeTarget "InfogateUITests" */;
+			buildPhases = (
+				F320156223DCA4D900801101 /* Sources */,
+				F320156323DCA4D900801101 /* Frameworks */,
+				F320156423DCA4D900801101 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F320156823DCA4D900801101 /* PBXTargetDependency */,
+			);
+			name = InfogateUITests;
+			productName = InfogateUITests;
+			productReference = F320156623DCA4D900801101 /* InfogateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F320153A23DCA4D600801101 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Brukakis, Dimitrios (DE)";
+				TargetAttributes = {
+					F320154123DCA4D600801101 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					F320155A23DCA4D800801101 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = F320154123DCA4D600801101;
+					};
+					F320156523DCA4D900801101 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = F320154123DCA4D600801101;
+					};
+				};
+			};
+			buildConfigurationList = F320153D23DCA4D600801101 /* Build configuration list for PBXProject "Infogate" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F320153923DCA4D600801101;
+			productRefGroup = F320154323DCA4D600801101 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F320154123DCA4D600801101 /* Infogate */,
+				F320155A23DCA4D800801101 /* InfogateTests */,
+				F320156523DCA4D900801101 /* InfogateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F320154023DCA4D600801101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F320155523DCA4D800801101 /* LaunchScreen.storyboard in Resources */,
+				F320155223DCA4D800801101 /* Assets.xcassets in Resources */,
+				F320154D23DCA4D600801101 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F320155923DCA4D800801101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F320156423DCA4D900801101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F320153E23DCA4D600801101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F320154A23DCA4D600801101 /* ViewController.swift in Sources */,
+				F320154623DCA4D600801101 /* AppDelegate.swift in Sources */,
+				F320155023DCA4D600801101 /* Infogate.xcdatamodeld in Sources */,
+				F320154823DCA4D600801101 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F320155723DCA4D800801101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F320156023DCA4D800801101 /* InfogateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F320156223DCA4D900801101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F320156B23DCA4D900801101 /* InfogateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F320155D23DCA4D800801101 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F320154123DCA4D600801101 /* Infogate */;
+			targetProxy = F320155C23DCA4D800801101 /* PBXContainerItemProxy */;
+		};
+		F320156823DCA4D900801101 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F320154123DCA4D600801101 /* Infogate */;
+			targetProxy = F320156723DCA4D900801101 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F320154B23DCA4D600801101 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F320154C23DCA4D600801101 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F320155323DCA4D800801101 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F320155423DCA4D800801101 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F320156D23DCA4D900801101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F320156E23DCA4D900801101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F320157023DCA4D900801101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Infogate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.ubahnstation.Infogate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F320157123DCA4D900801101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Infogate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.ubahnstation.Infogate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F320157323DCA4D900801101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InfogateTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.ubahnstation.InfogateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infogate.app/Infogate";
+			};
+			name = Debug;
+		};
+		F320157423DCA4D900801101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InfogateTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.ubahnstation.InfogateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infogate.app/Infogate";
+			};
+			name = Release;
+		};
+		F320157623DCA4D900801101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InfogateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.ubahnstation.InfogateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Infogate;
+			};
+			name = Debug;
+		};
+		F320157723DCA4D900801101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InfogateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.ubahnstation.InfogateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Infogate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F320153D23DCA4D600801101 /* Build configuration list for PBXProject "Infogate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F320156D23DCA4D900801101 /* Debug */,
+				F320156E23DCA4D900801101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F320156F23DCA4D900801101 /* Build configuration list for PBXNativeTarget "Infogate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F320157023DCA4D900801101 /* Debug */,
+				F320157123DCA4D900801101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F320157223DCA4D900801101 /* Build configuration list for PBXNativeTarget "InfogateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F320157323DCA4D900801101 /* Debug */,
+				F320157423DCA4D900801101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F320157523DCA4D900801101 /* Build configuration list for PBXNativeTarget "InfogateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F320157623DCA4D900801101 /* Debug */,
+				F320157723DCA4D900801101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F320154E23DCA4D600801101 /* Infogate.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F320154F23DCA4D600801101 /* Infogate.xcdatamodel */,
+			);
+			currentVersion = F320154F23DCA4D600801101 /* Infogate.xcdatamodel */;
+			path = Infogate.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F320153A23DCA4D600801101 /* Project object */;
+}
