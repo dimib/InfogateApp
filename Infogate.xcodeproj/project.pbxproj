@@ -3,19 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		F320154623DCA4D600801101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320154523DCA4D600801101 /* AppDelegate.swift */; };
 		F320154823DCA4D600801101 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320154723DCA4D600801101 /* SceneDelegate.swift */; };
-		F320154A23DCA4D600801101 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320154923DCA4D600801101 /* ViewController.swift */; };
+		F320154A23DCA4D600801101 /* LocationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320154923DCA4D600801101 /* LocationListViewController.swift */; };
 		F320154D23DCA4D600801101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F320154B23DCA4D600801101 /* Main.storyboard */; };
 		F320155023DCA4D600801101 /* Infogate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F320154E23DCA4D600801101 /* Infogate.xcdatamodeld */; };
 		F320155223DCA4D800801101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F320155123DCA4D800801101 /* Assets.xcassets */; };
 		F320155523DCA4D800801101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F320155323DCA4D800801101 /* LaunchScreen.storyboard */; };
 		F320156023DCA4D800801101 /* InfogateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320155F23DCA4D800801101 /* InfogateTests.swift */; };
 		F320156B23DCA4D900801101 /* InfogateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320156A23DCA4D900801101 /* InfogateUITests.swift */; };
+		F320157B23DEAAB100801101 /* locations.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F320157A23DEAAB100801101 /* locations.graphql */; };
+		F320157E23DEAF3700801101 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F320157C23DEAF3700801101 /* API.swift */; };
+		F320157F23DEAF3700801101 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = F320157D23DEAF3700801101 /* schema.json */; };
+		F320158E23DEB07000801101 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = F320158D23DEB07000801101 /* Apollo */; };
+		F320159023DEB07000801101 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = F320158F23DEB07000801101 /* ApolloSQLite */; };
+		F320159223DEB07000801101 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = F320159123DEB07000801101 /* ApolloWebSocket */; };
+		F3ABF33B23DF702C000943A3 /* LocationResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ABF33A23DF702C000943A3 /* LocationResultCell.swift */; };
+		F3ABF33D23DF78CB000943A3 /* InfogateClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ABF33823DF674E000943A3 /* InfogateClient.swift */; };
+		F3ABF34023DFF729000943A3 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ABF33F23DFF729000943A3 /* LocationViewModel.swift */; };
+		F3ABF34323DFFB0E000943A3 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ABF34223DFFB0E000943A3 /* Location.swift */; };
+		F3ABF34523E00378000943A3 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ABF34423E00378000943A3 /* LocationViewController.swift */; };
+		F3ABF34723E008DD000943A3 /* DepartureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ABF34623E008DD000943A3 /* DepartureCell.swift */; };
+		F3ABF34923E00D8B000943A3 /* locations.xxgraphqlxx in Resources */ = {isa = PBXBuildFile; fileRef = F3ABF34823E00D8B000943A3 /* locations.xxgraphqlxx */; };
+		F3ABF34B23E02D16000943A3 /* LocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ABF34A23E02D16000943A3 /* LocationAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +53,7 @@
 		F320154223DCA4D600801101 /* Infogate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infogate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F320154523DCA4D600801101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F320154723DCA4D600801101 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F320154923DCA4D600801101 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F320154923DCA4D600801101 /* LocationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewController.swift; sourceTree = "<group>"; };
 		F320154C23DCA4D600801101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F320154F23DCA4D600801101 /* Infogate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Infogate.xcdatamodel; sourceTree = "<group>"; };
 		F320155123DCA4D800801101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +65,17 @@
 		F320156623DCA4D900801101 /* InfogateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfogateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F320156A23DCA4D900801101 /* InfogateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfogateUITests.swift; sourceTree = "<group>"; };
 		F320156C23DCA4D900801101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F320157A23DEAAB100801101 /* locations.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = locations.graphql; sourceTree = "<group>"; };
+		F320157C23DEAF3700801101 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		F320157D23DEAF3700801101 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		F3ABF33823DF674E000943A3 /* InfogateClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfogateClient.swift; sourceTree = "<group>"; };
+		F3ABF33A23DF702C000943A3 /* LocationResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResultCell.swift; sourceTree = "<group>"; };
+		F3ABF33F23DFF729000943A3 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		F3ABF34223DFFB0E000943A3 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F3ABF34423E00378000943A3 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		F3ABF34623E008DD000943A3 /* DepartureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureCell.swift; sourceTree = "<group>"; };
+		F3ABF34823E00D8B000943A3 /* locations.xxgraphqlxx */ = {isa = PBXFileReference; lastKnownFileType = text; path = locations.xxgraphqlxx; sourceTree = "<group>"; };
+		F3ABF34A23E02D16000943A3 /* LocationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +83,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F320158E23DEB07000801101 /* Apollo in Frameworks */,
+				F320159223DEB07000801101 /* ApolloWebSocket in Frameworks */,
+				F320159023DEB07000801101 /* ApolloSQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +113,7 @@
 				F320155E23DCA4D800801101 /* InfogateTests */,
 				F320156923DCA4D900801101 /* InfogateUITests */,
 				F320154323DCA4D600801101 /* Products */,
+				F320158C23DEB07000801101 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,9 +130,11 @@
 		F320154423DCA4D600801101 /* Infogate */ = {
 			isa = PBXGroup;
 			children = (
+				F3ABF34123DFFB01000943A3 /* Model */,
+				F3ABF33E23DFF61E000943A3 /* ViewController */,
+				F3ABF33C23DF705B000943A3 /* GraphQL */,
 				F320154523DCA4D600801101 /* AppDelegate.swift */,
 				F320154723DCA4D600801101 /* SceneDelegate.swift */,
-				F320154923DCA4D600801101 /* ViewController.swift */,
 				F320154B23DCA4D600801101 /* Main.storyboard */,
 				F320155123DCA4D800801101 /* Assets.xcassets */,
 				F320155323DCA4D800801101 /* LaunchScreen.storyboard */,
@@ -131,6 +162,46 @@
 			path = InfogateUITests;
 			sourceTree = "<group>";
 		};
+		F320158C23DEB07000801101 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3ABF33C23DF705B000943A3 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				F320157C23DEAF3700801101 /* API.swift */,
+				F320157D23DEAF3700801101 /* schema.json */,
+				F3ABF33823DF674E000943A3 /* InfogateClient.swift */,
+				F320157A23DEAAB100801101 /* locations.graphql */,
+				F3ABF34823E00D8B000943A3 /* locations.xxgraphqlxx */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		F3ABF33E23DFF61E000943A3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F320154923DCA4D600801101 /* LocationListViewController.swift */,
+				F3ABF34423E00378000943A3 /* LocationViewController.swift */,
+				F3ABF33A23DF702C000943A3 /* LocationResultCell.swift */,
+				F3ABF33F23DFF729000943A3 /* LocationViewModel.swift */,
+				F3ABF34623E008DD000943A3 /* DepartureCell.swift */,
+				F3ABF34A23E02D16000943A3 /* LocationAnnotation.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F3ABF34123DFFB01000943A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3ABF34223DFFB0E000943A3 /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F320156F23DCA4D900801101 /* Build configuration list for PBXNativeTarget "Infogate" */;
 			buildPhases = (
+				F320157923DEA94200801101 /* GraphQL  */,
 				F320153E23DCA4D600801101 /* Sources */,
 				F320153F23DCA4D600801101 /* Frameworks */,
 				F320154023DCA4D600801101 /* Resources */,
@@ -145,8 +217,16 @@
 			buildRules = (
 			);
 			dependencies = (
+				F320158523DEAFB400801101 /* PBXTargetDependency */,
+				F320158323DEAF9A00801101 /* PBXTargetDependency */,
+				F320158123DEAF8000801101 /* PBXTargetDependency */,
 			);
 			name = Infogate;
+			packageProductDependencies = (
+				F320158D23DEB07000801101 /* Apollo */,
+				F320158F23DEB07000801101 /* ApolloSQLite */,
+				F320159123DEB07000801101 /* ApolloWebSocket */,
+			);
 			productName = Infogate;
 			productReference = F320154223DCA4D600801101 /* Infogate.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +299,9 @@
 				Base,
 			);
 			mainGroup = F320153923DCA4D600801101;
+			packageReferences = (
+				F320157823DCA5FB00801101 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = F320154323DCA4D600801101 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -235,8 +318,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3ABF34923E00D8B000943A3 /* locations.xxgraphqlxx in Resources */,
 				F320155523DCA4D800801101 /* LaunchScreen.storyboard in Resources */,
+				F320157F23DEAF3700801101 /* schema.json in Resources */,
 				F320155223DCA4D800801101 /* Assets.xcassets in Resources */,
+				F320157B23DEAAB100801101 /* locations.graphql in Resources */,
 				F320154D23DCA4D600801101 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,15 +343,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F320157923DEA94200801101 /* GraphQL  */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "GraphQL ";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"GraphQL/schema.json\" GraphQL/API.swift\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F320153E23DCA4D600801101 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F320154A23DCA4D600801101 /* ViewController.swift in Sources */,
+				F320154A23DCA4D600801101 /* LocationListViewController.swift in Sources */,
+				F3ABF33D23DF78CB000943A3 /* InfogateClient.swift in Sources */,
+				F3ABF34723E008DD000943A3 /* DepartureCell.swift in Sources */,
 				F320154623DCA4D600801101 /* AppDelegate.swift in Sources */,
 				F320155023DCA4D600801101 /* Infogate.xcdatamodeld in Sources */,
+				F3ABF34323DFFB0E000943A3 /* Location.swift in Sources */,
+				F3ABF34523E00378000943A3 /* LocationViewController.swift in Sources */,
+				F3ABF33B23DF702C000943A3 /* LocationResultCell.swift in Sources */,
 				F320154823DCA4D600801101 /* SceneDelegate.swift in Sources */,
+				F320157E23DEAF3700801101 /* API.swift in Sources */,
+				F3ABF34023DFF729000943A3 /* LocationViewModel.swift in Sources */,
+				F3ABF34B23E02D16000943A3 /* LocationAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +412,18 @@
 			isa = PBXTargetDependency;
 			target = F320154123DCA4D600801101 /* Infogate */;
 			targetProxy = F320156723DCA4D900801101 /* PBXContainerItemProxy */;
+		};
+		F320158123DEAF8000801101 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = F320158023DEAF8000801101 /* Apollo */;
+		};
+		F320158323DEAF9A00801101 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = F320158223DEAF9A00801101 /* ApolloSQLite */;
+		};
+		F320158523DEAFB400801101 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = F320158423DEAFB400801101 /* ApolloWebSocket */;
 		};
 /* End PBXTargetDependency section */
 
@@ -588,6 +715,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F320157823DCA5FB00801101 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F320158023DEAF8000801101 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F320157823DCA5FB00801101 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		F320158223DEAF9A00801101 /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F320157823DCA5FB00801101 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+		F320158423DEAFB400801101 /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F320157823DCA5FB00801101 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+		F320158D23DEB07000801101 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F320157823DCA5FB00801101 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		F320158F23DEB07000801101 /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F320157823DCA5FB00801101 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+		F320159123DEB07000801101 /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F320157823DCA5FB00801101 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F320154E23DCA4D600801101 /* Infogate.xcdatamodeld */ = {

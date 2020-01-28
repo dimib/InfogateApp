@@ -1,0 +1,16 @@
+
+query Location($query: String, $max: Int) {
+    locations(service: "HVV", query: $query, max: $max) {
+        id
+        type
+        name
+        city
+        position {
+            latitude
+            longitude
+        }
+    }
+}
+
+
+

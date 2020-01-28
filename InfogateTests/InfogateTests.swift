@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Infogate
+// @testable import Infogate
 
 class InfogateTests: XCTestCase {
 
