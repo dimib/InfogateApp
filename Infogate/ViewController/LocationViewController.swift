@@ -21,6 +21,8 @@ class LocationViewController: UIViewController, UITableViewDataSource {
         mapView.showsUserLocation = true
         mapView.isZoomEnabled = true
         
+        departureTable.dataSource = self
+        
         let annotation = LocationAnnotation(viewModel.location)
         mapView.addAnnotation(annotation)
         mapView.region = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 1000.0, longitudinalMeters: 1000.00)

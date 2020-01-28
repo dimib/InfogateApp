@@ -24,7 +24,7 @@ struct Position {
 struct Departure {
     var name: String
     var direction: String
-    var departure: Date
+    var departure: Int
 }
 
 let UNKNOWN_LOCATION = Location(id: "", name: "", city: "", position: Position(latitude: 0.0, longitude: 0.0))

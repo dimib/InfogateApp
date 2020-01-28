@@ -9,6 +9,13 @@ query Location($query: String, $max: Int) {
             latitude
             longitude
         }
+        departures(max: 10) {
+            transport {
+                name
+                direction
+            }
+            departureReal
+        }
     }
 }
 
