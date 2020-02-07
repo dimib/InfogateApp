@@ -77,8 +77,7 @@ class DepartureModel {
         departure.direction
     }
     
-    var departureIn: Double {
-        let interval = DateInterval(start: Date(), end: departure.departure)
-        return interval.duration
+    var departureIn: Int {
+        departure.departure
     }
 }

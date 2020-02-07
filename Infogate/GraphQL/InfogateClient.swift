@@ -24,7 +24,7 @@ class InfogateClient {
         apollo.fetch(query: LocationQuery(query: query, max: max)) { result in
             switch result {
             case .success(let graphQLResult):
-                // print(graphQLResult)
+                print(graphQLResult)
                 if let locations = graphQLResult.data?.locations {
                     completionHandler(locations, nil)
                 } else {

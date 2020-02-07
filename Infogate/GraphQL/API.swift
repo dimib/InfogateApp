@@ -19,6 +19,15 @@ public final class LocationQuery: GraphQLQuery {
           latitude
           longitude
         }
+        departures(max: 10) {
+          __typename
+          transport {
+            __typename
+            name
+            direction
+          }
+          departureReal
+        }
       }
     }
     """
@@ -73,6 +82,7 @@ public final class LocationQuery: GraphQLQuery {
         GraphQLField("name", type: .scalar(String.self)),
         GraphQLField("city", type: .scalar(String.self)),
         GraphQLField("position", type: .object(Position.selections)),
+        GraphQLField("departures", arguments: ["max": 10], type: .list(.object(Departure.selections))),
       ]
 
       public private(set) var resultMap: ResultMap
@@ -81,8 +91,8 @@ public final class LocationQuery: GraphQLQuery {
         self.resultMap = unsafeResultMap
       }
 
-      public init(id: String? = nil, type: String? = nil, name: String? = nil, city: String? = nil, position: Position? = nil) {
-        self.init(unsafeResultMap: ["__typename": "Location", "id": id, "type": type, "name": name, "city": city, "position": position.flatMap { (value: Position) -> ResultMap in value.resultMap }])
+      public init(id: String? = nil, type: String? = nil, name: String? = nil, city: String? = nil, position: Position? = nil, departures: [Departure?]? = nil) {
+        self.init(unsafeResultMap: ["__typename": "Location", "id": id, "type": type, "name": name, "city": city, "position": position.flatMap { (value: Position) -> ResultMap in value.resultMap }, "departures": departures.flatMap { (value: [Departure?]) -> [ResultMap?] in value.map { (value: Departure?) -> ResultMap? in value.flatMap { (value: Departure) -> ResultMap in value.resultMap } } }])
       }
 
       public var __typename: String {
@@ -139,6 +149,15 @@ public final class LocationQuery: GraphQLQuery {
         }
       }
 
+      public var departures: [Departure?]? {
+        get {
+          return (resultMap["departures"] as? [ResultMap?]).flatMap { (value: [ResultMap?]) -> [Departure?] in value.map { (value: ResultMap?) -> Departure? in value.flatMap { (value: ResultMap) -> Departure in Departure(unsafeResultMap: value) } } }
+        }
+        set {
+          resultMap.updateValue(newValue.flatMap { (value: [Departure?]) -> [ResultMap?] in value.map { (value: Departure?) -> ResultMap? in value.flatMap { (value: Departure) -> ResultMap in value.resultMap } } }, forKey: "departures")
+        }
+      }
+
       public struct Position: GraphQLSelectionSet {
         public static let possibleTypes = ["Position"]
 
@@ -182,6 +201,100 @@ public final class LocationQuery: GraphQLQuery {
           }
           set {
             resultMap.updateValue(newValue, forKey: "longitude")
+          }
+        }
+      }
+
+      public struct Departure: GraphQLSelectionSet {
+        public static let possibleTypes = ["Departures"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("transport", type: .object(Transport.selections)),
+          GraphQLField("departureReal", type: .scalar(String.self)),
+        ]
+
+        public private(set) var resultMap: ResultMap
+
+        public init(unsafeResultMap: ResultMap) {
+          self.resultMap = unsafeResultMap
+        }
+
+        public init(transport: Transport? = nil, departureReal: String? = nil) {
+          self.init(unsafeResultMap: ["__typename": "Departures", "transport": transport.flatMap { (value: Transport) -> ResultMap in value.resultMap }, "departureReal": departureReal])
+        }
+
+        public var __typename: String {
+          get {
+            return resultMap["__typename"]! as! String
+          }
+          set {
+            resultMap.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var transport: Transport? {
+          get {
+            return (resultMap["transport"] as? ResultMap).flatMap { Transport(unsafeResultMap: $0) }
+          }
+          set {
+            resultMap.updateValue(newValue?.resultMap, forKey: "transport")
+          }
+        }
+
+        public var departureReal: String? {
+          get {
+            return resultMap["departureReal"] as? String
+          }
+          set {
+            resultMap.updateValue(newValue, forKey: "departureReal")
+          }
+        }
+
+        public struct Transport: GraphQLSelectionSet {
+          public static let possibleTypes = ["Transport"]
+
+          public static let selections: [GraphQLSelection] = [
+            GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+            GraphQLField("name", type: .scalar(String.self)),
+            GraphQLField("direction", type: .scalar(String.self)),
+          ]
+
+          public private(set) var resultMap: ResultMap
+
+          public init(unsafeResultMap: ResultMap) {
+            self.resultMap = unsafeResultMap
+          }
+
+          public init(name: String? = nil, direction: String? = nil) {
+            self.init(unsafeResultMap: ["__typename": "Transport", "name": name, "direction": direction])
+          }
+
+          public var __typename: String {
+            get {
+              return resultMap["__typename"]! as! String
+            }
+            set {
+              resultMap.updateValue(newValue, forKey: "__typename")
+            }
+          }
+
+          public var name: String? {
+            get {
+              return resultMap["name"] as? String
+            }
+            set {
+              resultMap.updateValue(newValue, forKey: "name")
+            }
+          }
+
+          public var direction: String? {
+            get {
+              return resultMap["direction"] as? String
+            }
+            set {
+              resultMap.updateValue(newValue, forKey: "direction")
+            }
           }
         }
       }

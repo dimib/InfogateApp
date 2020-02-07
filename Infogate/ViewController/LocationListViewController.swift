@@ -23,11 +23,34 @@ class LocationListViewController: UIViewController, UITableViewDataSource, UITab
                     guard let l = location else { return UNKNOWN_LOCATION }
                     let lat = l.position!.latitude!
                     let lon = l.position!.longitude!
+                    
+                    let formatter = DateFormatter()
+                    formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSSZZZZZ"
+                    
+                    let now = Date()
+                    
+                    var departures = [Departure]()
+                    if let hasDepartures = l.departures {
+                        hasDepartures.forEach { (dep) in
+                            
+                            if let dep = dep {
+                                
+                                let depReal = dep.departureReal != nil ? formatter.date(from: dep.departureReal!)! : Date()
+
+                                let departure = Departure(
+                                    name: dep.transport?.name ?? "",
+                                    direction: dep.transport?.direction ?? "",
+                                    departure: Int((depReal.timeIntervalSince(now) / 60)))
+                                departures.append(departure)
+                            }
+                        }
+                    }
                     return Location(
                         id: l.id!,
                         name: l.name!,
                         city: l.city!,
-                        position: Position(latitude: lat, longitude: lon))
+                        position: Position(latitude: lat, longitude: lon),
+                        departures: departures)
                 }
                 self.viewModel.locations = res
                 self.tableView.reloadData()
